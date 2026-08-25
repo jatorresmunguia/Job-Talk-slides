@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+
+.reveal .title {
+  font-size: 3.25rem !important;
+  color: #153268;
+  font-weight: 800 !important;
+}
+
+.reveal .subtitle {
+  font-size: 2.00rem !important;
+  color: #153268;
+  font-weight: 800 !important;
+}
+
+.reveal .quarto-title-author-name {
+  font-size: 1.50rem !important;
+  color: #153268;
+  font-weight: 800 !important;
+}
+
+.reveal .date {
+  font-size: 1.25rem !important;
+  color: #153268;
+  font-weight: 800 !important;
+}
+
+$body-color: #153268;
+$link-color: #0091c8;
+
+.reveal h1 {
+  font-size: 3.00rem !important;
+  font-weight: bolder !important;
+}
+
+.reveal h2 {
+  font-size: 2.75rem !important;
+  font-weight: bolder !important;
+}
+
+.reveal h3 {
+  font-size: 2.00rem !important;
+  font-weight: bolder !important;
+}
+
+.reveal h3 {
+  font-size: 1.50rem !important;
+  font-weight: bolder !important;
+}
+
+
+.reveal p,
+.reveal li {
+  font-size: 2rem !important;
+}
