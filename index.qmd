@@ -1,5 +1,5 @@
 ---
-title: "A Computational Approach to Identifying and Characterizing Risk Factors for Intimate Partner Violence Against Women and Girls in Mexico"
+title: "A computational approach to risk factors for intimate partner violence against women and girls in Mexico"
 subtitle: "A job talk prepared for the <br> Tecnológico de Monterrey"
 author: "Juan Armando Torres Munguía, Ph.D."
 date: "August 28, 2026"
@@ -15,294 +15,91 @@ title-slide-attributes:
   data-background-image: img/aRt-lake-chad-map.png
 ---
 
-
 ```{r}
-line_1 <- "Risk factors for crime and **gender-based** violence victimization"
+line_1 <- "Risk factors for crime and **gender-based violence** victimization"
 line_2 <- "Individual-, community-, and regional-level **correlates of poverty**"
 line_3 <- "**Insights and forecasts** for **humanitarian emergencies**"
 ```
 
 ## RESEARCH AGENDA
-Broadly speaking, the goal of my academic work is to provide scientific evidence to better understand _how **individuals**, **families**, and **communities** experience, adapt to, and cope with humanitarian- and development-related phenomena_ such as armed conflict, violence, climate change, poverty, and forced displacement. To address this question, I integrate **statistical methods**, **machine learning algorithms**, and **data science techniques**.
+The goal of my academic work is to provide scientific evidence to better understand _how **individuals**, **families**, and **communities** experience, adapt to, and cope with humanitarian- and development-related phenomena_. To address this question, I integrate **statistical methods**, **machine learning algorithms**, and **data science techniques**.
 
 <br>
 
 ## RESEARCH AGENDA
-Broadly speaking, the goal of my academic work is to provide scientific evidence to better understand _how **individuals**, **families**, and **communities** experience, adapt to, and cope with humanitarian- and development-related phenomena_ such as armed conflict, violence, climate change, poverty, and forced displacement. To address this question, I integrate **statistical methods**, **machine learning algorithms**, and **data science techniques**.
+The goal of my academic work is to provide scientific evidence to better understand _how **individuals**, **families**, and **communities** experience, adapt to, and cope with humanitarian- and development-related phenomena_. To address this question, I integrate **statistical methods**, **machine learning algorithms**, and **data science techniques**.
 
 <br>
 
 **Specific lines of research:**
 
-1. `r line_1`.
-
-2. `r line_2` (income, food insecurity, energy poverty, etc.).
-
+1. `r line_1`.  
+2. `r line_2` (income, food insecurity, energy poverty, etc.).  
 3. `r line_3` (armed conflict, disease outbreaks, forced displacement, etc.).
 
+## RESEARCH AGENDA
+The goal of my academic work is to provide scientific evidence to better understand _how **individuals**, **families**, and **communities** experience, adapt to, and cope with humanitarian- and development-related phenomena_. To address this question, I integrate **statistical methods**, **machine learning algorithms**, and **data science techniques**.
+
+<br>
+
+**Specific lines of research:**
+
+1. <span style="color:#4338CA;">`r line_1`.</span>  
+2. <span style="color:#DDEEFC;">`r line_2` (income, food insecurity, energy poverty, etc.).</span>  
+3. <span style="color:#DDEEFC;">`r line_3` (armed conflict, disease outbreaks, forced displacement, etc.).</span>
+
+
 ## 
 #### `r line_1`.
 
 <br>
 
-- **OBJECTIVE:** To identify and describe how factors from the ecological model relate to crime and violence victimization, with a focus on the most vulnerable groups (women and girls).
+**MOTIVATION:** 
+
+According to the 2021 National Survey on the Dynamics of Household Relationships (ENDIREH), in Mexico:
+
+- **70.1%** of women aged 15 and over have experienced at least one form of violence and/or discrimination.
+
+- **39.9%** have experienced **intimate partner violence (IPV)**.
+
+- Among IPV victims, **78.3%** neither sought support nor filed a complaint or report.
+
+- Beyond physical and sexual health consequences, IPV also has **psychological consequences**: **9.6%** have considered or attempted suicide following victimization.
 
 ## 
 #### `r line_1`.
 
 <br>
 
-- **OBJECTIVE:** To identify and describe how factors from the ecological model relate to crime and violence victimization, with a focus on the most vulnerable groups (women and girls).
+**OBJECTIVE:** 
 
-- **OUTPUTS:** 
-**(1)** Three peer-reviewed papers (_J. of Gender-Based Violence_, _J. of Computational Social Science_, and _J. of interpersonal violence_). **(2)** Two working papers (_Ibero-America Institute for Economic Research_ and _Inter-American Development Bank_)
+To **identify and describe** the extent to which a set of **risk factors** from the _ecological model_ are associated with **physical IPV against women and girls in Mexico**.
+
+<br>
+
+The _ecological model_ is a **theoretical framework** that conceptualizes violence as the result of the of the interaction of multiple factors at four interrelated levels: **individual, relationship, community, and society**.
 
 ## 
 #### `r line_1`.
 
 <br>
 
-- **OBJECTIVE:** To identify and describe how factors from the ecological model relate to crime and violence victimization, with a focus on the most vulnerable groups (women and girls).
+**DATA:**
 
-- **OUTPUTS:** 
-**(1)** Three peer-reviewed papers (_J. of Gender-Based Violence_, _J. of Computational Social Science_, and _J. of Interpersonal Violence_). **(2)** Two working papers (_Ibero-America Institute for Economic Research_ and _Inter-American Development Bank_)
-
-- **IMPACT:** 
-**(1)** Over 100 citations. **(2)** Supervision of two Master's theses at the Universidad Autónoma de Nuevo León and Ludwig-Maximilians-Universität München.
-
-## 
-#### `r line_2`.
-<br>
-
-- **OBJECTIVE:** To assess how a set of conditions shape patterns of poverty, with particular emphasis on the extreme poor.
-
-## 
-#### `r line_2`.
-<br>
-
-- **OBJECTIVE:** To assess how a set of conditions shape patterns of poverty, with particular emphasis on the extreme poor.
-
-- **OUTPUTS:** 
-**(1)** Three peer-reviewed papers (_J. of Applied Economics_, _Social Sciences_, and _PloS one_). **(2)** Two working papers (_Ibero-America Institute for Economic Research_)
-
-## 
-#### `r line_2`.
-<br>
-
-- **OBJECTIVE:** To assess how a set of conditions shape patterns of poverty, with particular emphasis on the extreme poor.
-
-- **OUTPUTS:** 
-**(1)** Three peer-reviewed papers (_J. of Applied Economics_, _Social Sciences_, and _PloS one_). **(2)** Two working papers (_Ibero-America Institute for Economic Research_)
-
-- **IMPACT:** 
-**(1)** Over 10 citations. **(2)** Cited in the _Regional Human Development Report 2025_ by UNDP.
-
-##
-#### `r line_3`.
-<br>
-
-- **OBJECTIVE:** To identify whether, how, where, and when humanitarian emergencies have occurred and may occur in the future.
-
-##
-#### `r line_3`.
-<br>
-
-- **OBJECTIVE:** To identify whether, how, where, and when humanitarian emergencies have occurred and may occur in the future.
-
-- **OUTPUTS:** 
-**(1)** Four peer-reviewed papers (_Frontiers in Climate_, _Scientific data_, _BMC public health_, and _BMJ_). **(2)** Six working papers (_UNIDIR_, and _UNU_).
-
-##
-#### `r line_3`.
-<br>
-
-- **OBJECTIVE:** To identify _whether_, _how_, _where_, and _when_ humanitarian emergencies have occurred and may occur in the future.
-
-- **OUTPUTS:** 
-**(1)** Four peer-reviewed papers (_Frontiers in Climate_, _Scientific data_, _BMC public health_, and _BMJ_). **(2)** Six working papers (_UNIDIR_, and _UNU_).
-
-- **IMPACT:** 
-**(1)** Over 60 citations. **(2)** 2023 ENLIGHT Open Science Award and was a finalist for the Falling Walls Science Breakthroughs. **(3)** UNOCHA's Humanitarian Data Exchange initiative. **(4)** Scientific and Technical Advisory Group of the Emergency Events Database (EM-DAT). **(5)** Cited in the _The Future of Peacekeeping: New Models and Related Capabilities_ (UN), _Preparedness for Epidemics and Pandemics_ (World Bank), and _Climate Risk Toolbox_ (FAO).
-
-# Research on pandemic- and epidemic-prone disease outbreaks
-
-## 
-#### Research on pandemic- and epidemic-prone disease outbreaks
-<br>
-
-**A collaborative project of:**
-
-:::: {.columns}
-
-::: {.column width="33%"}
-![](img/Uni-Goe-Logo.png){width="100%"}
-:::
-
-::: {.column width="33%"}
-![](img/Uni-Bor-Logo.png){width="70%"}
-:::
-
-::: {.column width="33%"}
-![](img/Uni-Gro-Logo.png){width="70%"}
-:::
-
-::::
-
-The project was made possible through financial support from the **ENLIGHT network**, the **German Academic Exchange Service (DAAD)**, and the **Federal Ministry of Education and Research (BMBF)** in Germany.
-
-## 
-#### Research on pandemic- and epidemic-prone disease outbreaks
-<br>
-
-**GOAL:** To **create a database containing all events with epidemic or pandemic potential to escalate into health crises**, enabling the analysis of three core questions: _when disease outbreaks occur_, _which diseases drive them_, and _where these events occur_.
-
-## 
-#### Research on pandemic- and epidemic-prone disease outbreaks
-<br>
-
-**GOAL:** To **create a database containing all events with epidemic or pandemic potential to escalate into health crises**, enabling the analysis of three core questions: _when disease outbreaks occur_, _which diseases drive them_, and _where these events occur_.
-
-<br>
-
-To create this, I employed a three-step methodology:
-
-:::: {.columns style="text-align: center;"}
-
-::: {.column width="33%"}
-**Data collection**  
-
-<i class="fa-solid fa-database" style="font-size:120px;"></i>
-:::
-
-::: {.column width="33%"}
-**Data processing**  
-
-<i class="fa-solid fa-gears" style="font-size:120px;"></i>
-:::
-
-::: {.column width="33%"}
-**Data analysis**  
-
-<i class="fa-solid fa-bacteria" style="font-size:120px;"></i>
-:::
-
-::::
-
-## 
-#### Data collection
-<br>
-Information was sourced from the WHO Disease Outbreak News (DONs) via web scraping using the `RSelenium` package in R.
+Dataset of 35,000 observations and 42 theoretical correlates from 10 data sources was created, covering the four levels of the ecological model:
 
 ::: {.panel-tabset}
 
-#### Ebola--Gabon, 1996
+#### <span style="background-color:#40A1FF; color:black;">Individual</span>
 
-<iframe src="pages_outbreaks/1996 - Ebola haemorrhagic fever in Gabon (new outbreak) - .html" style="width:100%; height:500px;"></iframe>
-
-:::
-
-## 
-#### Data processing
-<br>
-
-I created a code in <i class="fa-brands fa-r-project"></i> to transform unstructured information into a database by:
-
-:::: {.columns style="text-align: center;"}
-
-::: {.column width="33%"}
-**Text mining and language processing**  
-
-<i class="fa-solid fa-language" style="font-size:120px;"></i>
-:::
-
-::: {.column width="33%"}
-**Entity extraction (country, disease, year)**  
-
-<i class="fa-solid fa-list-check" style="font-size:120px;"></i>
-:::
-
-::: {.column width="33%"}
-**Harmonization to international standards**  
-
-<i class="fa-solid fa-link" style="font-size:120px;"></i>
-:::
-
-::::
-
-## 
-#### Data analysis
-<br>
-
-The last version of the dataset was updated in February 2026 and contains information on **3501 outbreaks**, associated with **91 pathogens** that occurred since January 1996 in **236 countries and territories worldwide**.
-
-- **Sub-Saharan Africa bears the highest burden of disease outbreaks**, with a clear spatial cluster around the Democratic Republic of the Congo.
-
-- Following the COVID-19 pandemic, multiple diseases have emerged or re-emerged, including vaccine-preventable diseases and pathogens that had previously been largely controlled or eliminated. **There is a shift toward vector-borne and waterborne transmission pathways.**
-
-## 
-#### Data analysis
-<br>
-
-**Geographic distribution of disease outbreaks in 2025**
-
-![](img/outbreaks_map.png){fig-align="center" style="width:100%; max-width:none;"}
-
-## 
-#### Data analysis
-<br>
-
-**Disease outbreaks in the world, 2021-2025**
-
-![](img/waffle_diseases.png){fig-align="center" style="width:100%; max-width:none;"}
-
-# A computational approach to gender-based violence
-
-## 
-#### A computational approach to gender-based violence
-
-<br>
-
-**GOAL:** To identify and describe the extent to which a comprehensive set of **risk factors from the ecological model** are associated with **physical intimate partner violence** (IPV) victimization in Mexico
-
-<br>
-
-To achieve this goal I employed a three-step methodology:
-
-:::: {.columns style="text-align: center;"}
-
-::: {.column width="33%"}
-**Data collection**  <br>
-
-<i class="fa-solid fa-database" style="font-size:120px;"></i>
-:::
-
-::: {.column width="33%"}
-**Model building, fitting, and assessment**  
-
-<i class="fa-solid fa-laptop-code" style="font-size:120px;"></i>
-:::
-
-::: {.column width="33%"}
-**Findings**  <br>
-
-<i class="fa-solid fa-person-harassing" style="font-size:120px;"></i>
-:::
-
-::::
-
-## 
-#### Data collection
-<br>
-Dataset of 35,000 observations and 42 theoretical correlates from 10 data sources was created, covering four levels of the ecological model:
-
-::: {.panel-tabset}
-
-#### Individual
 - Caracteristics of the woman: age, income, education, age at her first sexual intercourse, etc.
 
 - Caracteristics of the woman's partner: age, income, education, etc.
 
-#### Relationship
+- **Source:** ENDIREH
+
+#### <span style="background-color:#40A1FF; color:black;">Relationship</span>
+
 - Age of the woman at marriage or at cohabitation.
 
 - Woman's level of autonomy in the context of the relationship.
@@ -311,7 +108,9 @@ Dataset of 35,000 observations and 42 theoretical correlates from 10 data source
 
 - Division of housework among household members.
 
-#### Community
+- **Source:** ENDIREH
+
+#### <span style="background-color:#FFE099; color:black;">Community</span>
 
 - Level of social marginalization. 
 
@@ -323,7 +122,9 @@ Dataset of 35,000 observations and 42 theoretical correlates from 10 data source
 
 - Migration.
 
-#### Regional
+- **Source:** ENIGH, Census, Homicide records, UNDP
+
+#### <span style="background-color:#D92632; color:black;">Regional</span>
 
 - Quality of government.
 
@@ -331,29 +132,77 @@ Dataset of 35,000 observations and 42 theoretical correlates from 10 data source
 
 - Perception of corruption.
 
+- **Source:** ENCIG, ENVIPE
+
 :::
 
 ## 
-#### Model building, fitting, and assessment
+#### `r line_1`.
+
+<br>
+
+**DATA:**
+
+The ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information.
+
+::: r-hstack
+::: {data-id="box1" auto-animate-delay="0" style="background: #40A1FF; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #FFE099; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #D92632; width: 200px; height: 150px; margin: 10px;"}
+:::
+:::
+
+## 
+#### `r line_1`.
+
+<br>
+
+**DATA:**
+
+The ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information.
+
+::: r-stack
+::: {data-id="box3" style="background: #D92632; width: 350px; height: 350px; border-radius: 200px;"}
+:::
+
+::: {data-id="box2" style="background: #FFE099; width: 250px; height: 250px; border-radius: 200px;"}
+:::
+
+::: {data-id="box1" style="background: #40A1FF; width: 150px; height: 150px; border-radius: 200px;"}
+:::
+:::
+
+## 
+#### MODEL
+
 <br>
 
 **Binomial response variable**, indicating **whether a woman experienced physical violence within an intimate relationship in the past 12 months**.
 
-**Predictors include:** 
-
-- Parametric effects for categorical variables.  
-- Both linear and nonlinear effects for continuous variables.  
-- Spatial effects.  
-- Interaction effects.  
-- Random effects.  
+Predictors include the variables mentioned above, considering **linear and nonlinear effects, spatial effects, interaction effects, and random effects**.
 
 All these components are specified within a **structured additive regression (STAR) model**.
 
 ## 
-#### Model building, fitting, and assessment
+#### MODEL
+
 <br>
 
-Due to its **high dimensionality and complex structure**, a three-step strategy is used to estimate the STAR model:
+STAR models provide a model-based framework in which different functional forms (e.g., linear and nonlinear effects) can **compete to determine which best describes the relationship between covariates and the response variable**.
+
+This framework allows us to consider **multiple potential effects simultaneously** and better capture the complexity of the phenomenon under study.
+
+## 
+#### MODEL
+<br>
+
+Due to its **high dimensionality and complex structure** the model cannot be estimated via traditional inference models. 
+
+I designed a three-step strategy is used to estimate the STAR model:
 
 ::: {.panel-tabset}
 
@@ -377,6 +226,12 @@ Due to its **high dimensionality and complex structure**, a three-step strategy 
 - Finally, 95% confidence intervals for the subset of effects selected as stable are calculated by drawing 1000 random samples from the empirical distribution of the data using a bootstrap approach based on pointwise quantiles.
 
 :::
+
+## 
+#### Boosting algorithm
+<br>
+
+
 
 ## 
 #### Findings

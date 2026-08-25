@@ -11,7 +11,7 @@
 
   <meta name="author" content="Juan Armando Torres Munguía, Ph.D.">
   <meta name="dcterms.date" content="2026-08-28">
-  <title>A Computational Approach to Identifying and Characterizing Risk Factors for Intimate Partner Violence Against Women and Girls in Mexico</title>
+  <title>A computational approach to risk factors for intimate partner violence against women and girls in Mexico</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-a0fe7998e8f8a19e778ff92d0ecec388.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-d528e65c0fee6cba5c8a6c3ab8df00a8.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -129,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="img/aRt-lake-chad-map.png" class="quarto-title-block center">
-  <h1 class="title">A Computational Approach to Identifying and Characterizing Risk Factors for Intimate Partner Violence Against Women and Girls in Mexico</h1>
+  <h1 class="title">A computational approach to risk factors for intimate partner violence against women and girls in Mexico</h1>
   <p class="subtitle">A job talk prepared for the <br> Tecnológico de Monterrey</p>
 
 <div class="quarto-title-authors">
@@ -144,293 +144,164 @@ Juan Armando Torres Munguía, Ph.D.
 </section>
 <section id="research-agenda" class="slide level2">
 <h2>RESEARCH AGENDA</h2>
-<p>Broadly speaking, the goal of my academic work is to provide scientific evidence to better understand <em>how <strong>individuals</strong>, <strong>families</strong>, and <strong>communities</strong> experience, adapt to, and cope with humanitarian- and development-related phenomena</em> such as armed conflict, violence, climate change, poverty, and forced displacement. To address this question, I integrate <strong>statistical methods</strong>, <strong>machine learning algorithms</strong>, and <strong>data science techniques</strong>.</p>
+<p>The goal of my academic work is to provide scientific evidence to better understand <em>how <strong>individuals</strong>, <strong>families</strong>, and <strong>communities</strong> experience, adapt to, and cope with humanitarian- and development-related phenomena</em>. To address this question, I integrate <strong>statistical methods</strong>, <strong>machine learning algorithms</strong>, and <strong>data science techniques</strong>.</p>
 <p><br></p>
 </section>
 <section id="research-agenda-1" class="slide level2">
 <h2>RESEARCH AGENDA</h2>
-<p>Broadly speaking, the goal of my academic work is to provide scientific evidence to better understand <em>how <strong>individuals</strong>, <strong>families</strong>, and <strong>communities</strong> experience, adapt to, and cope with humanitarian- and development-related phenomena</em> such as armed conflict, violence, climate change, poverty, and forced displacement. To address this question, I integrate <strong>statistical methods</strong>, <strong>machine learning algorithms</strong>, and <strong>data science techniques</strong>.</p>
+<p>The goal of my academic work is to provide scientific evidence to better understand <em>how <strong>individuals</strong>, <strong>families</strong>, and <strong>communities</strong> experience, adapt to, and cope with humanitarian- and development-related phenomena</em>. To address this question, I integrate <strong>statistical methods</strong>, <strong>machine learning algorithms</strong>, and <strong>data science techniques</strong>.</p>
 <p><br></p>
 <p><strong>Specific lines of research:</strong></p>
 <ol type="1">
-<li><p>Risk factors for crime and <strong>gender-based</strong> violence victimization.</p></li>
-<li><p>Individual-, community-, and regional-level <strong>correlates of poverty</strong> (income, food insecurity, energy poverty, etc.).</p></li>
-<li><p><strong>Insights and forecasts</strong> for <strong>humanitarian emergencies</strong> (armed conflict, disease outbreaks, forced displacement, etc.).</p></li>
+<li>Risk factors for crime and <strong>gender-based violence</strong> victimization.<br>
+</li>
+<li>Individual-, community-, and regional-level <strong>correlates of poverty</strong> (income, food insecurity, energy poverty, etc.).<br>
+</li>
+<li><strong>Insights and forecasts</strong> for <strong>humanitarian emergencies</strong> (armed conflict, disease outbreaks, forced displacement, etc.).</li>
+</ol>
+</section>
+<section id="research-agenda-2" class="slide level2">
+<h2>RESEARCH AGENDA</h2>
+<p>The goal of my academic work is to provide scientific evidence to better understand <em>how <strong>individuals</strong>, <strong>families</strong>, and <strong>communities</strong> experience, adapt to, and cope with humanitarian- and development-related phenomena</em>. To address this question, I integrate <strong>statistical methods</strong>, <strong>machine learning algorithms</strong>, and <strong>data science techniques</strong>.</p>
+<p><br></p>
+<p><strong>Specific lines of research:</strong></p>
+<ol type="1">
+<li><span style="color:#4338CA;">Risk factors for crime and <strong>gender-based violence</strong> victimization.</span><br>
+</li>
+<li><span style="color:#DDEEFC;">Individual-, community-, and regional-level <strong>correlates of poverty</strong> (income, food insecurity, energy poverty, etc.).</span><br>
+</li>
+<li><span style="color:#DDEEFC;"><strong>Insights and forecasts</strong> for <strong>humanitarian emergencies</strong> (armed conflict, disease outbreaks, forced displacement, etc.).</span></li>
 </ol>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<h4 id="risk-factors-for-crime-and-gender-based-violence-victimization.">Risk factors for crime and <strong>gender-based</strong> violence victimization.</h4>
+<h4 id="risk-factors-for-crime-and-gender-based-violence-victimization.">Risk factors for crime and <strong>gender-based violence</strong> victimization.</h4>
 <p><br></p>
+<p><strong>MOTIVATION:</strong></p>
+<p>According to the 2021 National Survey on the Dynamics of Household Relationships (ENDIREH), in Mexico:</p>
 <ul>
-<li><strong>OBJECTIVE:</strong> To identify and describe how factors from the ecological model relate to crime and violence victimization, with a focus on the most vulnerable groups (women and girls).</li>
+<li><p><strong>70.1%</strong> of women aged 15 and over have experienced at least one form of violence and/or discrimination.</p></li>
+<li><p><strong>39.9%</strong> have experienced <strong>intimate partner violence (IPV)</strong>.</p></li>
+<li><p>Among IPV victims, <strong>78.3%</strong> neither sought support nor filed a complaint or report.</p></li>
+<li><p>Beyond physical and sexual health consequences, IPV also has <strong>psychological consequences</strong>: <strong>9.6%</strong> have considered or attempted suicide following victimization.</p></li>
 </ul>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-<h4 id="risk-factors-for-crime-and-gender-based-violence-victimization.-1">Risk factors for crime and <strong>gender-based</strong> violence victimization.</h4>
+<h4 id="risk-factors-for-crime-and-gender-based-violence-victimization.-1">Risk factors for crime and <strong>gender-based violence</strong> victimization.</h4>
 <p><br></p>
-<ul>
-<li><p><strong>OBJECTIVE:</strong> To identify and describe how factors from the ecological model relate to crime and violence victimization, with a focus on the most vulnerable groups (women and girls).</p></li>
-<li><p><strong>OUTPUTS:</strong> <strong>(1)</strong> Three peer-reviewed papers (<em>J. of Gender-Based Violence</em>, <em>J. of Computational Social Science</em>, and <em>J. of interpersonal violence</em>). <strong>(2)</strong> Two working papers (<em>Ibero-America Institute for Economic Research</em> and <em>Inter-American Development Bank</em>)</p></li>
-</ul>
+<p><strong>OBJECTIVE:</strong></p>
+<p>To <strong>identify and describe</strong> the extent to which a set of <strong>risk factors</strong> from the <em>ecological model</em> are associated with <strong>physical IPV against women and girls in Mexico</strong>.</p>
+<p><br></p>
+<p>The <em>ecological model</em> is a <strong>theoretical framework</strong> that conceptualizes violence as the result of the of the interaction of multiple factors at four interrelated levels: <strong>individual, relationship, community, and society</strong>.</p>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
-<h4 id="risk-factors-for-crime-and-gender-based-violence-victimization.-2">Risk factors for crime and <strong>gender-based</strong> violence victimization.</h4>
+<h4 id="risk-factors-for-crime-and-gender-based-violence-victimization.-2">Risk factors for crime and <strong>gender-based violence</strong> victimization.</h4>
 <p><br></p>
-<ul>
-<li><p><strong>OBJECTIVE:</strong> To identify and describe how factors from the ecological model relate to crime and violence victimization, with a focus on the most vulnerable groups (women and girls).</p></li>
-<li><p><strong>OUTPUTS:</strong> <strong>(1)</strong> Three peer-reviewed papers (<em>J. of Gender-Based Violence</em>, <em>J. of Computational Social Science</em>, and <em>J. of Interpersonal Violence</em>). <strong>(2)</strong> Two working papers (<em>Ibero-America Institute for Economic Research</em> and <em>Inter-American Development Bank</em>)</p></li>
-<li><p><strong>IMPACT:</strong> <strong>(1)</strong> Over 100 citations. <strong>(2)</strong> Supervision of two Master’s theses at the Universidad Autónoma de Nuevo León and Ludwig-Maximilians-Universität München.</p></li>
-</ul>
-</section>
-<section id="section-3" class="slide level2">
-<h2></h2>
-<h4 id="individual--community--and-regional-level-correlates-of-poverty.">Individual-, community-, and regional-level <strong>correlates of poverty</strong>.</h4>
-<p><br></p>
-<ul>
-<li><strong>OBJECTIVE:</strong> To assess how a set of conditions shape patterns of poverty, with particular emphasis on the extreme poor.</li>
-</ul>
-</section>
-<section id="section-4" class="slide level2">
-<h2></h2>
-<h4 id="individual--community--and-regional-level-correlates-of-poverty.-1">Individual-, community-, and regional-level <strong>correlates of poverty</strong>.</h4>
-<p><br></p>
-<ul>
-<li><p><strong>OBJECTIVE:</strong> To assess how a set of conditions shape patterns of poverty, with particular emphasis on the extreme poor.</p></li>
-<li><p><strong>OUTPUTS:</strong> <strong>(1)</strong> Three peer-reviewed papers (<em>J. of Applied Economics</em>, <em>Social Sciences</em>, and <em>PloS one</em>). <strong>(2)</strong> Two working papers (<em>Ibero-America Institute for Economic Research</em>)</p></li>
-</ul>
-</section>
-<section id="section-5" class="slide level2">
-<h2></h2>
-<h4 id="individual--community--and-regional-level-correlates-of-poverty.-2">Individual-, community-, and regional-level <strong>correlates of poverty</strong>.</h4>
-<p><br></p>
-<ul>
-<li><p><strong>OBJECTIVE:</strong> To assess how a set of conditions shape patterns of poverty, with particular emphasis on the extreme poor.</p></li>
-<li><p><strong>OUTPUTS:</strong> <strong>(1)</strong> Three peer-reviewed papers (<em>J. of Applied Economics</em>, <em>Social Sciences</em>, and <em>PloS one</em>). <strong>(2)</strong> Two working papers (<em>Ibero-America Institute for Economic Research</em>)</p></li>
-<li><p><strong>IMPACT:</strong> <strong>(1)</strong> Over 10 citations. <strong>(2)</strong> Cited in the <em>Regional Human Development Report 2025</em> by UNDP.</p></li>
-</ul>
-</section>
-<section id="section-6" class="slide level2">
-<h2></h2>
-<h4 id="insights-and-forecasts-for-humanitarian-emergencies."><strong>Insights and forecasts</strong> for <strong>humanitarian emergencies</strong>.</h4>
-<p><br></p>
-<ul>
-<li><strong>OBJECTIVE:</strong> To identify whether, how, where, and when humanitarian emergencies have occurred and may occur in the future.</li>
-</ul>
-</section>
-<section id="section-7" class="slide level2">
-<h2></h2>
-<h4 id="insights-and-forecasts-for-humanitarian-emergencies.-1"><strong>Insights and forecasts</strong> for <strong>humanitarian emergencies</strong>.</h4>
-<p><br></p>
-<ul>
-<li><p><strong>OBJECTIVE:</strong> To identify whether, how, where, and when humanitarian emergencies have occurred and may occur in the future.</p></li>
-<li><p><strong>OUTPUTS:</strong> <strong>(1)</strong> Four peer-reviewed papers (<em>Frontiers in Climate</em>, <em>Scientific data</em>, <em>BMC public health</em>, and <em>BMJ</em>). <strong>(2)</strong> Six working papers (<em>UNIDIR</em>, and <em>UNU</em>).</p></li>
-</ul>
-</section>
-<section id="section-8" class="slide level2">
-<h2></h2>
-<h4 id="insights-and-forecasts-for-humanitarian-emergencies.-2"><strong>Insights and forecasts</strong> for <strong>humanitarian emergencies</strong>.</h4>
-<p><br></p>
-<ul>
-<li><p><strong>OBJECTIVE:</strong> To identify <em>whether</em>, <em>how</em>, <em>where</em>, and <em>when</em> humanitarian emergencies have occurred and may occur in the future.</p></li>
-<li><p><strong>OUTPUTS:</strong> <strong>(1)</strong> Four peer-reviewed papers (<em>Frontiers in Climate</em>, <em>Scientific data</em>, <em>BMC public health</em>, and <em>BMJ</em>). <strong>(2)</strong> Six working papers (<em>UNIDIR</em>, and <em>UNU</em>).</p></li>
-<li><p><strong>IMPACT:</strong> <strong>(1)</strong> Over 60 citations. <strong>(2)</strong> 2023 ENLIGHT Open Science Award and was a finalist for the Falling Walls Science Breakthroughs. <strong>(3)</strong> UNOCHA’s Humanitarian Data Exchange initiative. <strong>(4)</strong> Scientific and Technical Advisory Group of the Emergency Events Database (EM-DAT). <strong>(5)</strong> Cited in the <em>The Future of Peacekeeping: New Models and Related Capabilities</em> (UN), <em>Preparedness for Epidemics and Pandemics</em> (World Bank), and <em>Climate Risk Toolbox</em> (FAO).</p></li>
-</ul>
-</section>
-<section>
-<section id="research-on-pandemic--and-epidemic-prone-disease-outbreaks" class="title-slide slide level1 center">
-<h1>Research on pandemic- and epidemic-prone disease outbreaks</h1>
-
-</section>
-<section id="section-9" class="slide level2">
-<h2></h2>
-<h4 id="research-on-pandemic--and-epidemic-prone-disease-outbreaks-1">Research on pandemic- and epidemic-prone disease outbreaks</h4>
-<p><br></p>
-<p><strong>A collaborative project of:</strong></p>
-<div class="columns">
-<div class="column" style="width:33%;">
-<p><img data-src="img/Uni-Goe-Logo.png" style="width:100.0%"></p>
-</div><div class="column" style="width:33%;">
-<p><img data-src="img/Uni-Bor-Logo.png" style="width:70.0%"></p>
-</div><div class="column" style="width:33%;">
-<p><img data-src="img/Uni-Gro-Logo.png" style="width:70.0%"></p>
-</div></div>
-<p>The project was made possible through financial support from the <strong>ENLIGHT network</strong>, the <strong>German Academic Exchange Service (DAAD)</strong>, and the <strong>Federal Ministry of Education and Research (BMBF)</strong> in Germany.</p>
-</section>
-<section id="section-10" class="slide level2">
-<h2></h2>
-<h4 id="research-on-pandemic--and-epidemic-prone-disease-outbreaks-2">Research on pandemic- and epidemic-prone disease outbreaks</h4>
-<p><br></p>
-<p><strong>GOAL:</strong> To <strong>create a database containing all events with epidemic or pandemic potential to escalate into health crises</strong>, enabling the analysis of three core questions: <em>when disease outbreaks occur</em>, <em>which diseases drive them</em>, and <em>where these events occur</em>.</p>
-</section>
-<section id="section-11" class="slide level2">
-<h2></h2>
-<h4 id="research-on-pandemic--and-epidemic-prone-disease-outbreaks-3">Research on pandemic- and epidemic-prone disease outbreaks</h4>
-<p><br></p>
-<p><strong>GOAL:</strong> To <strong>create a database containing all events with epidemic or pandemic potential to escalate into health crises</strong>, enabling the analysis of three core questions: <em>when disease outbreaks occur</em>, <em>which diseases drive them</em>, and <em>where these events occur</em>.</p>
-<p><br></p>
-<p>To create this, I employed a three-step methodology:</p>
-<div class="columns" style="text-align: center;">
-<div class="column" style="width:33%;">
-<p><strong>Data collection</strong></p>
-<p><i class="fa-solid fa-database" style="font-size:120px;"></i></p>
-</div><div class="column" style="width:33%;">
-<p><strong>Data processing</strong></p>
-<p><i class="fa-solid fa-gears" style="font-size:120px;"></i></p>
-</div><div class="column" style="width:33%;">
-<p><strong>Data analysis</strong></p>
-<p><i class="fa-solid fa-bacteria" style="font-size:120px;"></i></p>
-</div></div>
-</section>
-<section id="section-12" class="slide level2">
-<h2></h2>
-<h4 id="data-collection">Data collection</h4>
-<p><br> Information was sourced from the WHO Disease Outbreak News (DONs) via web scraping using the <code>RSelenium</code> package in R.</p>
+<p><strong>DATA:</strong></p>
+<p>Dataset of 35,000 observations and 42 theoretical correlates from 10 data sources was created, covering the four levels of the ecological model:</p>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Ebola–Gabon, 1996</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1"><span style="background-color:#40A1FF; color:black;">Individual</span></a></li><li><a href="#tabset-1-2"><span style="background-color:#40A1FF; color:black;">Relationship</span></a></li><li><a href="#tabset-1-3"><span style="background-color:#FFE099; color:black;">Community</span></a></li><li><a href="#tabset-1-4"><span style="background-color:#D92632; color:black;">Regional</span></a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<iframe src="pages_outbreaks/1996 - Ebola haemorrhagic fever in Gabon (new outbreak) - .html" style="width:100%; height:500px;">
-</iframe>
-</div>
-</div>
-</div>
-</section>
-<section id="section-13" class="slide level2">
-<h2></h2>
-<h4 id="data-processing">Data processing</h4>
-<p><br></p>
-<p>I created a code in <i class="fa-brands fa-r-project"></i> to transform unstructured information into a database by:</p>
-<div class="columns" style="text-align: center;">
-<div class="column" style="width:33%;">
-<p><strong>Text mining and language processing</strong></p>
-<p><i class="fa-solid fa-language" style="font-size:120px;"></i></p>
-</div><div class="column" style="width:33%;">
-<p><strong>Entity extraction (country, disease, year)</strong></p>
-<p><i class="fa-solid fa-list-check" style="font-size:120px;"></i></p>
-</div><div class="column" style="width:33%;">
-<p><strong>Harmonization to international standards</strong></p>
-<p><i class="fa-solid fa-link" style="font-size:120px;"></i></p>
-</div></div>
-</section>
-<section id="section-14" class="slide level2">
-<h2></h2>
-<h4 id="data-analysis">Data analysis</h4>
-<p><br></p>
-<p>The last version of the dataset was updated in February 2026 and contains information on <strong>3501 outbreaks</strong>, associated with <strong>91 pathogens</strong> that occurred since January 1996 in <strong>236 countries and territories worldwide</strong>.</p>
-<ul>
-<li><p><strong>Sub-Saharan Africa bears the highest burden of disease outbreaks</strong>, with a clear spatial cluster around the Democratic Republic of the Congo.</p></li>
-<li><p>Following the COVID-19 pandemic, multiple diseases have emerged or re-emerged, including vaccine-preventable diseases and pathogens that had previously been largely controlled or eliminated. <strong>There is a shift toward vector-borne and waterborne transmission pathways.</strong></p></li>
-</ul>
-</section>
-<section id="section-15" class="slide level2">
-<h2></h2>
-<h4 id="data-analysis-1">Data analysis</h4>
-<p><br></p>
-<p><strong>Geographic distribution of disease outbreaks in 2025</strong></p>
-
-<img data-src="img/outbreaks_map.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100%; max-width:none;"></section>
-<section id="section-16" class="slide level2">
-<h2></h2>
-<h4 id="data-analysis-2">Data analysis</h4>
-<p><br></p>
-<p><strong>Disease outbreaks in the world, 2021-2025</strong></p>
-
-<img data-src="img/waffle_diseases.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100%; max-width:none;"></section></section>
-<section>
-<section id="a-computational-approach-to-gender-based-violence" class="title-slide slide level1 center">
-<h1>A computational approach to gender-based violence</h1>
-
-</section>
-<section id="section-17" class="slide level2">
-<h2></h2>
-<h4 id="a-computational-approach-to-gender-based-violence-1">A computational approach to gender-based violence</h4>
-<p><br></p>
-<p><strong>GOAL:</strong> To identify and describe the extent to which a comprehensive set of <strong>risk factors from the ecological model</strong> are associated with <strong>physical intimate partner violence</strong> (IPV) victimization in Mexico</p>
-<p><br></p>
-<p>To achieve this goal I employed a three-step methodology:</p>
-<div class="columns" style="text-align: center;">
-<div class="column" style="width:33%;">
-<p><strong>Data collection</strong> <br></p>
-<p><i class="fa-solid fa-database" style="font-size:120px;"></i></p>
-</div><div class="column" style="width:33%;">
-<p><strong>Model building, fitting, and assessment</strong></p>
-<p><i class="fa-solid fa-laptop-code" style="font-size:120px;"></i></p>
-</div><div class="column" style="width:33%;">
-<p><strong>Findings</strong> <br></p>
-<p><i class="fa-solid fa-person-harassing" style="font-size:120px;"></i></p>
-</div></div>
-</section>
-<section id="section-18" class="slide level2">
-<h2></h2>
-<h4 id="data-collection-1">Data collection</h4>
-<p><br> Dataset of 35,000 observations and 42 theoretical correlates from 10 data sources was created, covering four levels of the ecological model:</p>
-<div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Individual</a></li><li><a href="#tabset-2-2">Relationship</a></li><li><a href="#tabset-2-3">Community</a></li><li><a href="#tabset-2-4">Regional</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1">
 <ul>
 <li><p>Caracteristics of the woman: age, income, education, age at her first sexual intercourse, etc.</p></li>
 <li><p>Caracteristics of the woman’s partner: age, income, education, etc.</p></li>
+<li><p><strong>Source:</strong> ENDIREH</p></li>
 </ul>
 </div>
-<div id="tabset-2-2">
+<div id="tabset-1-2">
 <ul>
 <li><p>Age of the woman at marriage or at cohabitation.</p></li>
 <li><p>Woman’s level of autonomy in the context of the relationship.</p></li>
 <li><p>Average number of household members per room in the dwelling.</p></li>
 <li><p>Division of housework among household members.</p></li>
+<li><p><strong>Source:</strong> ENDIREH</p></li>
 </ul>
 </div>
-<div id="tabset-2-3">
+<div id="tabset-1-3">
 <ul>
 <li><p>Level of social marginalization.</p></li>
 <li><p>Type of community (rural, urban).</p></li>
 <li><p>Share of women-headed households.</p></li>
 <li><p>Homicides against women.</p></li>
 <li><p>Migration.</p></li>
+<li><p><strong>Source:</strong> ENIGH, Census, Homicide records, UNDP</p></li>
 </ul>
 </div>
-<div id="tabset-2-4">
+<div id="tabset-1-4">
 <ul>
 <li><p>Quality of government.</p></li>
 <li><p>Quality of public services.</p></li>
 <li><p>Perception of corruption.</p></li>
+<li><p><strong>Source:</strong> ENCIG, ENVIPE</p></li>
 </ul>
 </div>
 </div>
 </div>
 </section>
-<section id="section-19" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
-<h4 id="model-building-fitting-and-assessment">Model building, fitting, and assessment</h4>
+<h4 id="risk-factors-for-crime-and-gender-based-violence-victimization.-3">Risk factors for crime and <strong>gender-based violence</strong> victimization.</h4>
+<p><br></p>
+<p><strong>DATA:</strong></p>
+<p>The ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information.</p>
+<div class="r-hstack">
+<div data-id="box1" data-auto-animate-delay="0" style="background: #40A1FF; width: 200px; height: 150px; margin: 10px;">
+
+</div>
+<div data-id="box2" data-auto-animate-delay="0.1" style="background: #FFE099; width: 200px; height: 150px; margin: 10px;">
+
+</div>
+<div data-id="box3" data-auto-animate-delay="0.2" style="background: #D92632; width: 200px; height: 150px; margin: 10px;">
+
+</div>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<h4 id="risk-factors-for-crime-and-gender-based-violence-victimization.-4">Risk factors for crime and <strong>gender-based violence</strong> victimization.</h4>
+<p><br></p>
+<p><strong>DATA:</strong></p>
+<p>The ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information.</p>
+<div class="r-stack">
+<div data-id="box3" style="background: #D92632; width: 350px; height: 350px; border-radius: 200px;">
+
+</div>
+<div data-id="box2" style="background: #FFE099; width: 250px; height: 250px; border-radius: 200px;">
+
+</div>
+<div data-id="box1" style="background: #40A1FF; width: 150px; height: 150px; border-radius: 200px;">
+
+</div>
+</div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<h4 id="model">MODEL</h4>
 <p><br></p>
 <p><strong>Binomial response variable</strong>, indicating <strong>whether a woman experienced physical violence within an intimate relationship in the past 12 months</strong>.</p>
-<p><strong>Predictors include:</strong></p>
-<ul>
-<li>Parametric effects for categorical variables.<br>
-</li>
-<li>Both linear and nonlinear effects for continuous variables.<br>
-</li>
-<li>Spatial effects.<br>
-</li>
-<li>Interaction effects.<br>
-</li>
-<li>Random effects.</li>
-</ul>
+<p>Predictors include the variables mentioned above, considering <strong>linear and nonlinear effects, spatial effects, interaction effects, and random effects</strong>.</p>
 <p>All these components are specified within a <strong>structured additive regression (STAR) model</strong>.</p>
 </section>
-<section id="section-20" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
-<h4 id="model-building-fitting-and-assessment-1">Model building, fitting, and assessment</h4>
+<h4 id="model-1">MODEL</h4>
 <p><br></p>
-<p>Due to its <strong>high dimensionality and complex structure</strong>, a three-step strategy is used to estimate the STAR model:</p>
+<p>STAR models provide a model-based framework in which different functional forms (e.g., linear and nonlinear effects) can <strong>compete to determine which best describes the relationship between covariates and the response variable</strong>.</p>
+<p>This framework allows us to consider <strong>multiple potential effects simultaneously</strong> and better capture the complexity of the phenomenon under study.</p>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<h4 id="model-2">MODEL</h4>
+<p><br></p>
+<p>Due to its <strong>high dimensionality and complex structure</strong> the model cannot be estimated via traditional inference models.</p>
+<p>I designed a three-step strategy is used to estimate the STAR model:</p>
 <div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Boosting algorithm</a></li><li><a href="#tabset-3-2">Stability selection</a></li><li><a href="#tabset-3-3">Confidence intervals</a></li></ul>
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Boosting algorithm</a></li><li><a href="#tabset-2-2">Stability selection</a></li><li><a href="#tabset-2-3">Confidence intervals</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1">
+<div id="tabset-2-1">
 <ul>
 <li><p>It <strong>combines estimation with simultaneous variable selection and model choice</strong> by iteratively selecting the best-fitting effect at each step.</p></li>
 <li><p>To ensure unbiased variable selection and model choice, one degree of freedom is assigned to each candidate effect (e.g.&nbsp;linear vs.&nbsp;nonlinear).</p></li>
@@ -438,14 +309,14 @@ Juan Armando Torres Munguía, Ph.D.
 <li><p>The boosting algorithm yields the best predictive model, retaining only relevant predictors in their most appropriate functional form.</p></li>
 </ul>
 </div>
-<div id="tabset-3-2">
+<div id="tabset-2-2">
 <ul>
 <li><p>To avoid selecting non-relevant variables, subsampling generates multiple random subsets, and the boosting algorithm controls the error rate while selecting predictors.</p></li>
 <li><p>The relative selection frequency for each effect is computed across subsets; effects exceeding a predefined threshold are retained as stable.</p></li>
 <li><p>The result is a parsimonious model including only stable factors (non-zero coefficients).</p></li>
 </ul>
 </div>
-<div id="tabset-3-3">
+<div id="tabset-2-3">
 <ul>
 <li>Finally, 95% confidence intervals for the subset of effects selected as stable are calculated by drawing 1000 random samples from the empirical distribution of the data using a bootstrap approach based on pointwise quantiles.</li>
 </ul>
@@ -453,7 +324,12 @@ Juan Armando Torres Munguía, Ph.D.
 </div>
 </div>
 </section>
-<section id="section-21" class="slide level2">
+<section id="section-8" class="slide level2">
+<h2></h2>
+<h4 id="boosting-algorithm-1">Boosting algorithm</h4>
+<p><br></p>
+</section>
+<section id="section-9" class="slide level2">
 <h2></h2>
 <h4 id="findings">Findings</h4>
 <p><br></p>
@@ -471,7 +347,7 @@ Juan Armando Torres Munguía, Ph.D.
 </div>
 </div></div>
 </section>
-<section id="section-22" class="slide level2">
+<section id="section-10" class="slide level2">
 <h2></h2>
 <h4 id="findings-1">Findings</h4>
 <p><br></p>
@@ -489,7 +365,7 @@ Juan Armando Torres Munguía, Ph.D.
 </div>
 </div></div>
 </section>
-<section id="section-23" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <h4 id="findings-2">Findings</h4>
 <p><br></p>
@@ -507,7 +383,7 @@ Juan Armando Torres Munguía, Ph.D.
 </div>
 </div></div>
 </section>
-<section id="section-24" class="slide level2">
+<section id="section-12" class="slide level2">
 <h2></h2>
 <h4 id="papers-in-this-presentation">Papers in this presentation:</h4>
 <p><strong>Research on pandemic- and epidemic-prone disease outbreaks</strong></p>
@@ -519,7 +395,7 @@ Juan Armando Torres Munguía, Ph.D.
 <ul>
 <li>Torres Munguía, JA (2024) <em>A model-based boosting approach to risk factors for physical intimate partner violence against women and girls in Mexico</em>. <strong>Journal of Computational Social Science</strong> 7, 1937–1963 . DOI: <a href="https://doi.org/10.1007/s42001-024-00292-5">10.1007/s42001-024-00292-5</a></li>
 </ul>
-</section></section>
+</section>
 <section id="thank-you" class="title-slide slide level1 center" data-background-color="#0039a6">
 <h1>THANK YOU!</h1>
 <p><br><br></p>
