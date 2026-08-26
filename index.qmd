@@ -209,8 +209,6 @@ I designed a three-step strategy is used to estimate the STAR model:
 #### Boosting algorithm
 - It **combines estimation with simultaneous variable selection and model choice** by iteratively selecting the best-fitting effect at each step. 
 
-- To ensure unbiased variable selection and model choice, one degree of freedom is assigned to each candidate effect (e.g. linear vs. nonlinear).
-
 - To avoid overfitting, cross-validation is used to determine the optimal number of iterations, mitigating multicollinerity.
 
 - The boosting algorithm yields the best predictive model, retaining only relevant predictors in their most appropriate functional form.
@@ -229,9 +227,13 @@ I designed a three-step strategy is used to estimate the STAR model:
 
 ## 
 #### Boosting algorithm
-<br>
 
-
+<iframe 
+  src="https://jatorresmunguia.shinyapps.io/shiny-boosting/"
+  width="100%"
+  height="500px"
+  style="border: none;">
+</iframe>
 
 ## 
 #### Findings
