@@ -14,7 +14,7 @@ This repository contains the Quarto source code, data, and supporting materials 
 - **Title:** A computational approach to risk factors for intimate partner violence against women and girls in Mexico
 - **Date:** August 28, 2026
 - **Institution:** Tecnológico de Monterrey
-- **Author:** Juan Armando Torres Munguía
+- **Author:** Juan Armando Torres Munguía, PhD.
 
 ## Reproducibility
 
