@@ -11,11 +11,15 @@ format:
     include-in-header:
       text: |
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-title-slide-attributes: 
-  data-background-image: img/aRt-lake-chad-map.png
 ---
 
 ```{r}
+library(ggplot2)
+library(ggiraph)
+library(tidyverse)
+library(sf)
+library(terra)
+
 line_1 <- "Risk factors for crime and **gender-based violence** victimization"
 line_2 <- "Individual-, community-, and regional-level **correlates of poverty**"
 line_3 <- "**Insights and forecasts** for **humanitarian emergencies**"
@@ -73,7 +77,7 @@ According to the 2021 National Survey on the Dynamics of Household Relationships
 
 **OBJECTIVE:** 
 
-To **identify and describe** the extent to which a set of **risk factors** from the _ecological model_ are associated with **physical IPV against women and girls in Mexico**.
+To **identify and describe** the extent to which a set of **risk factors** from the _ecological model_ associated with and can predict the **probability of experiencing physical IPV against women and girls in Mexico**.
 
 <br>
 
@@ -183,9 +187,9 @@ The ecological model creates a three-dimensional hierarchical structure, linking
 
 **Binomial response variable**, indicating **whether a woman experienced physical violence within an intimate relationship in the past 12 months**.
 
-Predictors include the variables mentioned above, considering **linear and nonlinear effects, spatial effects, interaction effects, and random effects**.
+<br>
 
-All these components are specified within a **structured additive regression (STAR) model**.
+Predictors include the variables mentioned above, considering **linear and nonlinear effects, spatial effects, interaction effects, and random effects**. All these components are specified within a **structured additive regression (STAR) model**.
 
 ## 
 #### MODEL
@@ -194,6 +198,8 @@ All these components are specified within a **structured additive regression (ST
 
 STAR models provide a model-based framework in which different functional forms (e.g., linear and nonlinear effects) can **compete to determine which best describes the relationship between covariates and the response variable**.
 
+<br>
+
 This framework allows us to consider **multiple potential effects simultaneously** and better capture the complexity of the phenomenon under study.
 
 ## 
@@ -201,6 +207,8 @@ This framework allows us to consider **multiple potential effects simultaneously
 <br>
 
 Due to its **high dimensionality and complex structure** the model cannot be estimated via traditional inference models. 
+
+<br>
 
 I designed a three-step strategy is used to estimate the STAR model:
 
@@ -218,7 +226,7 @@ I designed a three-step strategy is used to estimate the STAR model:
 
 - The relative selection frequency for each effect is computed across subsets; effects exceeding a predefined threshold are retained as stable.
 
-- The result is a parsimonious model including only stable factors (non-zero coefficients).
+- The result is a parsimonious model including only stable factors.
 
 #### Confidence intervals
 - Finally, 95% confidence intervals for the subset of effects selected as stable are calculated by drawing 1000 random samples from the empirical distribution of the data using a bootstrap approach based on pointwise quantiles.
@@ -255,9 +263,6 @@ _Women who initiate sex during childhood are a particularly vulnerable populatio
 #| fig-height: 5
 #| fig-width: 5
 
-library(ggplot2)
-library(ggiraph)
-library(tidyverse)
 load("data-plots/varby2Plot.RData")
 
 con_sex |> 
@@ -265,17 +270,17 @@ con_sex |>
     ggplot(aes(x = xvalo)) +
   
   geom_ribbon(aes(ymin = q025y + 0.5353688, ymax = q975y + 0.5353688),
-              fill = "#0039a6", 
+              fill = "#994000", 
               alpha = 0.15) +
   geom_line(aes(y = ymean + 0.5353688), 
-            color = "#0039a6", 
+            color = "#994000", 
             linewidth = 1) +
   geom_line(aes(y = q025y + 0.5353688), 
-            color = "#0039a6",
+            color = "#994000",
             linetype = "dashed",
             linewidth = 0.7) +
   geom_line(aes(y = q975y + 0.5353688), 
-            color = "#0039a6", 
+            color = "#994000", 
             linetype = "dashed", 
             linewidth = 0.7) + 
   labs(x = "Age at first sexual intercourse \n (in years)", 
@@ -316,17 +321,17 @@ hacin |>
     ggplot(aes(x = xvalo)) +
   
   geom_ribbon(aes(ymin = q025y + 0.5353688, ymax = q975y + 0.5353688),
-              fill = "#0039a6", 
+              fill = "#994000", 
               alpha = 0.15) +
   geom_line(aes(y = ymean + 0.5353688), 
-            color = "#0039a6", 
+            color = "#994000", 
             linewidth = 1) +
   geom_line(aes(y = q025y + 0.5353688), 
-            color = "#0039a6",
+            color = "#994000",
             linetype = "dashed",
             linewidth = 0.7) +
   geom_line(aes(y = q975y + 0.5353688), 
-            color = "#0039a6", 
+            color = "#994000", 
             linetype = "dashed", 
             linewidth = 0.7) + 
   labs(x = "Average number of household members \n per room in the dwelling", 
@@ -347,14 +352,11 @@ hacin |>
 
 ```{r}
 #| echo: false
+#| warning: false
 #| fig-height: 5
 #| fig-width: 10
 
-library(sf)
-library(terra)
-library(ggplot2)
-
-mexico <- st_read("data-plots/INEGI_Estatal_.shp")
+mexico <- st_read("data-plots/INEGI_Estatal_.shp", quiet = TRUE)
 
 load("data-plots/sp_fis_añoxy.RData")
 
@@ -390,16 +392,16 @@ ggplot() +
 
   geom_sf(data = mexico, fill = NA, color = "black") +
 
-  geom_sf(data = panel_bg, fill = "white", color = "black") + 
+  geom_sf(data = panel_bg, fill = "white", color = NA) + 
 
-  scale_fill_gradient(name = "Predicted probability",
-                      low = "white",
-                      high = "#0039a6") +
+  scale_fill_gradient(name = "Predicted probability of physical IPV victimization",
+                      low = "#FFE6CC",
+                      high = "#994000") +
 
   coord_sf(expand = FALSE) +
 
   theme_void() + 
-    
+
   theme(legend.position = "bottom",
       legend.title.position = "top",
       legend.title = element_text(hjust = 0.5),
@@ -407,33 +409,87 @@ ggplot() +
 
 ```
 
-##
-#### Papers in this presentation:
+## 
+#### POLICY IMPLICATIONS
+- Targeted interventions: identify the subgroups of women at greatest risk of IPV and prioritize targeted prevention and support strategies for these groups.
 
-**Research on pandemic- and epidemic-prone disease outbreaks**
+- Prevention measures: identify interventions that could reduce women's vulnerability to IPV, for example, measures aimed at preventing sexual initiation during childhood.
 
-- Torres Munguía JA, _et al_ (2022) _A global dataset of pandemic- and epidemic-prone disease outbreaks_. **Nature Scientific Data** 9, 683. DOI: [10.1038/s41597-022-01797-2](https://doi.org/10.1038/s41597-022-01797-2).
+- Women's empowerment: identify strategies to promote the economic and social empowerment of women facing greater vulnerability to IPV.
 
-- Torres Munguía JA, Martínez-Zarzoso I. (2026) _Global trends of pandemic-prone and epidemic-prone disease outbreaks in 2024_. **BMJ Global Health**. DOI: [10.1136/bmjgh-2025-020708](https://doi.org/10.1136/bmjgh-2025-020708)
+- Geographic targeting: identify priority areas for prevention, support, and resource allocation.
 
-**A computational approach to gender-based violence**
+## IMPACT
 
-- Torres Munguía, JA (2024) _A model-based boosting approach to risk factors for physical intimate partner violence against women and girls in Mexico_. **Journal of Computational Social Science** 7, 1937–1963 . DOI: [10.1007/s42001-024-00292-5](https://doi.org/10.1007/s42001-024-00292-5)
+::: {.panel-tabset}
+
+#### Papers
+
+- <span style="font-size:0.85em;">Torres Munguía, JA (2024) _A model-based boosting approach to risk factors for physical intimate partner violence against women and girls in Mexico_. **Journal of Computational Social Science**. DOI: [10.1007/s42001-024-00292-5](https://doi.org/10.1007/s42001-024-00292-5).</span>
+
+- <span style="font-size:0.85em;">Torres Munguía, JA (2024) _An analysis of the risk factors for intimate partner sexual violence against women and girls in Mexico_. **Journal of Gender-Based Violence**. DOI: [10.1332/23986808Y2024D000000031](https://doi.org/10.1332/23986808Y2024D000000031).</span>
+
+- <span style="font-size:0.85em;">Torres Munguía, JA; Martínez-Zarzoso, I (2022) _Determinants of Emotional Intimate Partner Violence against Women and Girls with Children in Mexican Households: An Ecological Framework_. **Journal of Interpersonal Violence**. DOI: [10.1177/08862605211072179](https://doi.org/10.1177/08862605211072179).</span>
+
+#### Working papers
+
+- <span style="font-size:0.85em;">Kleffmann, J; Torres Munguía, JA; et al (2023) _Factors Driving Weapons Holding in the North East of Nigeria_. **United Nations Institute for Disarmament Research Findings Report**. DOI: [10.37559/MEAC/23/11](https://doi.org/10.37559/MEAC/23/11).</span>
+
+- <span style="font-size:0.85em;">Torres Munguía, JA; Martínez-Zarzoso, I (2018) _What is behind homicide gender gaps in Mexico? A spatial semiparametric approach_. **Diskussionsbeiträge des Ibero-America Institute for Economic Research (IAI) - Georg-August-Universität Göttingen**. Retrieved from: [https://www.econstor.eu/handle/10419/178674](https://www.econstor.eu/handle/10419/178674).</span>
+
+- <span style="font-size:0.85em;">Vilalta Perdomo, CJ; Castillo, JG; Torres Munguía, JA (2016) _Violent Crime in Latin American Cities_. **Inter-American Development Bank Discussion Paper**. DOI: [10.18235/0007973](http://dx.doi.org/10.18235/0007973).</span>
+
+::: 
+
+Together, these publications have accumulated more than 125 citations.
+
+## IMPACT
+
+This research line has also inspired two research theses, for which I served as external supervisor:
+
+- _Índice de violencia de pareja contra la mujer mexicana: análisis estadístico multivariado como herramienta para el etiquetado y clasificación de datos_. Paulina Aldape Bretado, MSc in Data Science, Universidad Autónoma de Nuevo León.
+
+- _Psychological Intimate Partner Violence Against Women and the Role of Childhood Violence Exposure: A Machine Learning Approach_. Clara Strasser, MSc in Statistics, Ludwig-Maximilians-Universität München.
+
+## FUTURE LINES OF RESEARCH
+
+- **Causal inference** to assess, for example, the effect of child marriage on the probability of experiencing IPV.
+
+- **Predictive models** to estimate whether, how, where, and when different forms of violence may occur in the future, e.g., sexual violence using ACLED microdata.
+
+- **Cross-country extensions** to identify risk factors for gender-based violence in other countries with comparable survey data, e.g. Mongolia, Bangladesh, South Africa, and Uruguay.
+
 
 # THANK YOU! {background-color="#0039a6"}
-<br><br>
+<br>
 
 :::: {.columns}
-::: {.column width="20%"}
+::: {.column width="45%"}
+
+<div style="text-align: left; font-size: 24px;">
+Contact information:
+
+<i class="fa-solid fa-envelope"></i>
+<a href="mailto:ja.torresmunguia@gmail.com">ja.torresmunguia@gmail.com</a>
+
+<i class="fa-brands fa-github"></i>
+<a href="https://github.com/jatorresmunguia">jatorresmunguia</a>
+
+</div>
+
+:::
+
+::: {.column width="10%"}
+
 :::
 
 ::: {.column width="45%"}
+<br><br>
+<div style="text-align:center;">
+
 <span style="font-size:0.90em;">To learn more about me and my work,
 please scan or visit my website</span>
-:::
 
-::: {.column width="35%"}
-<div style="text-align:center;">
 ![](img/link-to-website.png){width="50%"}
 </div>
 
@@ -443,5 +499,6 @@ please scan or visit my website</span>
    juan-torresmunguia.netlify.app
 </a>
 </div>
+
 :::
 ::::
