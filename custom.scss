@@ -1,7 +1,7 @@
 /*-- scss:defaults --*/
 
 .reveal .title {
-  font-size: 3.25rem !important;
+  font-size: 3.10rem !important;
   color: #153268;
   font-weight: 800 !important;
 }
@@ -13,13 +13,13 @@
 }
 
 .reveal .quarto-title-author-name {
-  font-size: 1.50rem !important;
+  font-size: 1.75rem !important;
   color: #153268;
   font-weight: 800 !important;
 }
 
 .reveal .date {
-  font-size: 1.25rem !important;
+  font-size: 1.50rem !important;
   color: #153268;
   font-weight: 800 !important;
 }
@@ -51,14 +51,4 @@ $link-color: #0091c8;
 .reveal p,
 .reveal li {
   font-size: 2rem !important;
-}
-
-.community-tab {
-  background-color: #FFE099 !important;
-  color: #000000 !important;
-}
-
-.societal-tab {
-  background-color: #D92632 !important;
-  color: #FFFFFF !important;
 }

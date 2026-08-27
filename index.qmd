@@ -1,6 +1,6 @@
 ---
-title: "A computational approach to risk factors for intimate partner violence against women and girls in Mexico"
-subtitle: "A job talk prepared for the <br> Tecnológico de Monterrey"
+title: "A computational approach to risk factors for intimate partner violence against women and girls in Mexico <br>"
+subtitle: "<br> A job talk prepared for the <br> Tecnológico de Monterrey"
 author: "Juan Armando Torres Munguía, Ph.D."
 date: "August 28, 2026"
 date-format: "MMMM D, YYYY"
