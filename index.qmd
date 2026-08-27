@@ -451,7 +451,7 @@ This research line has also inspired two research theses, for which I served as 
 
 - _Psychological Intimate Partner Violence Against Women and the Role of Childhood Violence Exposure: A Machine Learning Approach_. Clara Strasser, MSc in Statistics, Ludwig-Maximilians-Universität München.
 
-## FUTURE LINES OF RESEARCH
+## FUTURE WORK
 
 - **Causal inference** to assess, for example, the effect of child marriage on the probability of experiencing IPV.
 
