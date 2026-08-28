@@ -46,60 +46,46 @@
     "href": "index.html#section-3",
     "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
     "section": "",
-    "text": "Risk factors for crime and gender-based violence victimization.\n\nDATA:\nThe ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information."
+    "text": "MODEL\n\nBinomial response variable, indicating whether a woman experienced physical violence within an intimate relationship in the past 12 months.\n\nPredictors include the variables mentioned above, considering linear and nonlinear effects, spatial effects, interaction effects, and random effects. All these components are specified within a structured additive regression (STAR) model."
   },
   {
     "objectID": "index.html#section-4",
     "href": "index.html#section-4",
     "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
     "section": "",
-    "text": "Risk factors for crime and gender-based violence victimization.\n\nDATA:\nThe ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information."
+    "text": "MODEL\n\nSTAR models provide a model-based framework in which different functional forms (e.g., linear and nonlinear effects) can compete to determine which best describes the relationship between covariates and the response variable.\n\nThis framework allows us to consider multiple potential effects simultaneously and better capture the complexity of the phenomenon under study."
   },
   {
     "objectID": "index.html#section-5",
     "href": "index.html#section-5",
     "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
     "section": "",
-    "text": "MODEL\n\nBinomial response variable, indicating whether a woman experienced physical violence within an intimate relationship in the past 12 months.\n\nPredictors include the variables mentioned above, considering linear and nonlinear effects, spatial effects, interaction effects, and random effects. All these components are specified within a structured additive regression (STAR) model."
-  },
-  {
-    "objectID": "index.html#section-6",
-    "href": "index.html#section-6",
-    "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
-    "section": "",
-    "text": "MODEL\n\nSTAR models provide a model-based framework in which different functional forms (e.g., linear and nonlinear effects) can compete to determine which best describes the relationship between covariates and the response variable.\n\nThis framework allows us to consider multiple potential effects simultaneously and better capture the complexity of the phenomenon under study."
+    "text": "MODEL\n\nDue to its high dimensionality and complex structure the model cannot be estimated via traditional inference models.\n\nI designed a three-step strategy is used to estimate the STAR model:\n\nBoosting algorithmStability selectionConfidence intervals\n\n\n\nIt combines estimation with simultaneous variable selection and model choice by iteratively selecting the best-fitting effect at each step.\nTo avoid overfitting, cross-validation is used to determine the optimal number of iterations, mitigating multicollinerity.\nThe boosting algorithm yields the best predictive model, retaining only relevant predictors in their most appropriate functional form.\n\n\n\n\nTo avoid selecting non-relevant variables, subsampling generates multiple random subsets, and the boosting algorithm controls the error rate while selecting predictors.\nThe relative selection frequency for each effect is computed across subsets; effects exceeding a predefined threshold are retained as stable.\nThe result is a parsimonious model including only stable factors.\n\n\n\n\nFinally, 95% confidence intervals for the subset of effects selected as stable are calculated by drawing 1000 random samples from the empirical distribution of the data using a bootstrap approach based on pointwise quantiles."
   },
   {
     "objectID": "index.html#section-7",
     "href": "index.html#section-7",
     "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
     "section": "",
-    "text": "MODEL\n\nDue to its high dimensionality and complex structure the model cannot be estimated via traditional inference models.\n\nI designed a three-step strategy is used to estimate the STAR model:\n\nBoosting algorithmStability selectionConfidence intervals\n\n\n\nIt combines estimation with simultaneous variable selection and model choice by iteratively selecting the best-fitting effect at each step.\nTo avoid overfitting, cross-validation is used to determine the optimal number of iterations, mitigating multicollinerity.\nThe boosting algorithm yields the best predictive model, retaining only relevant predictors in their most appropriate functional form.\n\n\n\n\nTo avoid selecting non-relevant variables, subsampling generates multiple random subsets, and the boosting algorithm controls the error rate while selecting predictors.\nThe relative selection frequency for each effect is computed across subsets; effects exceeding a predefined threshold are retained as stable.\nThe result is a parsimonious model including only stable factors.\n\n\n\n\nFinally, 95% confidence intervals for the subset of effects selected as stable are calculated by drawing 1000 random samples from the empirical distribution of the data using a bootstrap approach based on pointwise quantiles."
+    "text": "MAIN FINDINGS\n\nPhysical IPV victimization risk and women’s age at first sexual intercourse.\n\n\nWomen who initiate sex during childhood are a particularly vulnerable population to physical IPV in Mexico."
+  },
+  {
+    "objectID": "index.html#section-8",
+    "href": "index.html#section-8",
+    "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
+    "section": "",
+    "text": "MAIN FINDINGS\n\nPhysical IPV victimization risk and average number of household members per room in the dwelling.\n\n\nAs the number of household members grows, the likelihood of suffering from physical violence in the context of intimate relationships increases at a rate of 1.6 percentage points per member per room in the dwelling."
   },
   {
     "objectID": "index.html#section-9",
     "href": "index.html#section-9",
     "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
     "section": "",
-    "text": "MAIN FINDINGS\n\nPhysical IPV victimization risk and women’s age at first sexual intercourse.\n\n\nWomen who initiate sex during childhood are a particularly vulnerable population to physical IPV in Mexico."
+    "text": "MAIN FINDINGS\n\nSpatial effects of physical IPV victimization risk."
   },
   {
     "objectID": "index.html#section-10",
     "href": "index.html#section-10",
-    "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
-    "section": "",
-    "text": "MAIN FINDINGS\n\nPhysical IPV victimization risk and average number of household members per room in the dwelling.\n\n\nAs the number of household members grows, the likelihood of suffering from physical violence in the context of intimate relationships increases at a rate of 1.6 percentage points per member per room in the dwelling."
-  },
-  {
-    "objectID": "index.html#section-11",
-    "href": "index.html#section-11",
-    "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
-    "section": "",
-    "text": "MAIN FINDINGS\n\nSpatial effects of physical IPV victimization risk."
-  },
-  {
-    "objectID": "index.html#section-12",
-    "href": "index.html#section-12",
     "title": "A computational approach to risk factors for intimate partner violence against women and girls in Mexico ",
     "section": "",
     "text": "POLICY IMPLICATIONS\n\nTargeted interventions: identify the subgroups of women at greatest risk of IPV and prioritize targeted prevention and support strategies for these groups.\nPrevention measures: identify interventions that could reduce women’s vulnerability to IPV, for example, measures aimed at preventing sexual initiation during childhood.\nWomen’s empowerment: identify strategies to promote the economic and social empowerment of women facing greater vulnerability to IPV.\nGeographic targeting: identify priority areas for prevention, support, and resource allocation."

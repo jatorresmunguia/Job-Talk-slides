@@ -141,46 +141,6 @@ Dataset of 35,000 observations and 42 theoretical correlates from 10 data source
 :::
 
 ## 
-#### `r line_1`.
-
-<br>
-
-**DATA:**
-
-The ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information.
-
-::: r-hstack
-::: {data-id="box1" auto-animate-delay="0" style="background: #40A1FF; width: 200px; height: 150px; margin: 10px;"}
-:::
-
-::: {data-id="box2" auto-animate-delay="0.1" style="background: #FFE099; width: 200px; height: 150px; margin: 10px;"}
-:::
-
-::: {data-id="box3" auto-animate-delay="0.2" style="background: #D92632; width: 200px; height: 150px; margin: 10px;"}
-:::
-:::
-
-## 
-#### `r line_1`.
-
-<br>
-
-**DATA:**
-
-The ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information.
-
-::: r-stack
-::: {data-id="box3" style="background: #D92632; width: 350px; height: 350px; border-radius: 200px;"}
-:::
-
-::: {data-id="box2" style="background: #FFE099; width: 250px; height: 250px; border-radius: 200px;"}
-:::
-
-::: {data-id="box1" style="background: #40A1FF; width: 150px; height: 150px; border-radius: 200px;"}
-:::
-:::
-
-## 
 #### MODEL
 
 <br>
