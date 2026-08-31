@@ -39,7 +39,7 @@ The goal of my academic work is to provide scientific evidence to better underst
 
 1. `r line_1`.  
 2. `r line_2` (income, food insecurity, energy poverty, etc.).  
-3. `r line_3` (armed conflict, disease outbreaks, forced displacement, etc.).
+3. `r line_3` (armed conflict, disease outbreaks, forced displacement, disasters, etc.).
 
 ## RESEARCH AGENDA
 The goal of my academic work is to provide scientific evidence to better understand _how **individuals**, **families**, and **communities** experience, adapt to, and cope with humanitarian- and development-related phenomena_. To address this question, I integrate **statistical methods**, **machine learning algorithms**, and **data science techniques**.
@@ -138,6 +138,46 @@ Dataset of 35,000 observations and 42 theoretical correlates from 10 data source
 
 - **Source:** ENCIG, ENVIPE
 
+:::
+
+## 
+#### `r line_1`.
+
+<br>
+
+**DATA:**
+
+The ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information.
+
+::: r-hstack
+::: {data-id="box1" auto-animate-delay="0" style="background: #40A1FF; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #FFE099; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #D92632; width: 200px; height: 150px; margin: 10px;"}
+:::
+:::
+
+## 
+#### `r line_1`.
+
+<br>
+
+**DATA:**
+
+The ecological model creates a three-dimensional hierarchical structure, linking individual- and relationship-level data to municipal- and state-level information.
+
+::: r-stack
+::: {data-id="box3" style="background: #D92632; width: 350px; height: 350px; border-radius: 200px;"}
+:::
+
+::: {data-id="box2" style="background: #FFE099; width: 250px; height: 250px; border-radius: 200px;"}
+:::
+
+::: {data-id="box1" style="background: #40A1FF; width: 150px; height: 150px; border-radius: 200px;"}
+:::
 :::
 
 ## 
@@ -407,9 +447,9 @@ Together, these publications have accumulated more than 125 citations.
 
 This research line has also inspired two research theses, for which I served as external supervisor:
 
-- _Índice de violencia de pareja contra la mujer mexicana: análisis estadístico multivariado como herramienta para el etiquetado y clasificación de datos_. Paulina Aldape Bretado, MSc in Data Science, Universidad Autónoma de Nuevo León.
+- _Índice de violencia de pareja contra la mujer mexicana: análisis estadístico multivariado como herramienta para el etiquetado y clasificación de datos_. MSc in Data Science, Universidad Autónoma de Nuevo León.
 
-- _Psychological Intimate Partner Violence Against Women and the Role of Childhood Violence Exposure: A Machine Learning Approach_. Clara Strasser, MSc in Statistics, Ludwig-Maximilians-Universität München.
+- _Psychological Intimate Partner Violence Against Women and the Role of Childhood Violence Exposure: A Machine Learning Approach_. MSc in Statistics, Ludwig-Maximilians-Universität München.
 
 ## FUTURE WORK
 
